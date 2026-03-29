@@ -1,0 +1,16 @@
+// =================================================================================
+// Code generated and maintained by GoFrame CLI tool. DO NOT EDIT.
+// =================================================================================
+
+package hello
+
+import (
+	"context"
+
+	"demo/api/hello/v1"
+)
+
+type IHelloV1 interface {
+	Chat(ctx context.Context, req *v1.ChatReq) (res *v1.ChatRes, err error)
+	Hello(ctx context.Context, req *v1.HelloReq) (res *v1.HelloRes, err error)
+}
